@@ -1,21 +1,22 @@
 import Cards from '../src/components/Cards';
+import LargeCard from '../src/components/LargeCard';
 import SmallCards from '../src/components/SmallCards';
 
 export default function Home({ exploreData, anywhereData }) {
 	return (
-		<div className="">
+		<div className='max-w-7xl mx-auto px-8'>
 			{/* BANNER FROM LAYOUT.JS */}
 
 			{/* EXPLORE NEARBY */}
-			<div className="pt-5 flex flex-col items-center justify-center">
+			<section className="pt-5 flex flex-col items-center justify-center">
 				<h1 className="font-semibold text-3xl pb-10">Explore Nearby</h1>
 				<SmallCards exploreData={exploreData} />
-			</div>
+			</section>
 
 			{/* LIVE ANYWHERE */}
 
-			<div
-				className="p-10 mb-96 flex flex-col md:items-center justify-center overflow-y-scroll 
+			<section
+				className="py-10 mb-2 flex flex-col md:items-center justify-center overflow-y-scroll 
 							scrollbar-hide sm:scrollbar-default 
 							sm:scrollbar-thin sm:scrollbar-track-gray-300  sm:scrollbar-thumb-gray-500 select-none"
 			>
@@ -23,7 +24,17 @@ export default function Home({ exploreData, anywhereData }) {
 					Live Anywhere
 				</h1>
 				<Cards anywhereData={anywhereData} />
-			</div>
+			</section>
+
+			{/* LARGE CARD */}
+			<section className=''>
+				<LargeCard
+					img="https://links.papareact.com/4cj"
+					title="The Greatest Outdoors"
+					description="Whishlists curated by Airbnb."
+					buttonText="Get Inspired"
+				/>
+			</section>
 		</div>
 	);
 }

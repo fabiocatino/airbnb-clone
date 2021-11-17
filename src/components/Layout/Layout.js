@@ -14,13 +14,13 @@ const Layout = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			{router.pathname === '/' ? (
-				<div className=" bg-main-background relative w-full h-[653px] lg:h-[600px] object-cover">
+				<div className=" bg-main-background relative h-[500px] lg:h-[600px]  object-center">
 					<Header />
 					<div className="sm:hidden flex justify-center pt-5">
 						<Searchbar />
 					</div>
 					<div className="flex flex-col items-center justify-center h-full space-y-2 ">
-						<p className="text-lg font-bold">Not sure where to go?</p>
+						<p className="text-lg text-black font-bold">Not sure where to go?</p>
 						<button className="shadow-lg hover:shadow-xl active:scale-90 h-16 w-52 rounded-full bg-white ">
 							<p
 								className="bg-clip-text text-transparent font-bold text-lg 
