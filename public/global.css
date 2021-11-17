@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.dropdown-btn {
+		@apply p-3 text-base text-left cursor-pointer;
+	}
+	.header-btn {
+		@apply font-semibold hover:text-gray-400 px-4 py-[10px] cursor-pointer;
+	}
+}
