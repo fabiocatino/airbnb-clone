@@ -15,6 +15,7 @@ export default function Dropdown() {
 						</div>
 					</Menu.Button>
 				</div>
+
 				<Transition
 					as={Fragment}
 					enter="transition ease-out duration-100"
@@ -24,9 +25,13 @@ export default function Dropdown() {
 					leaveFrom="transform opacity-100 scale-100"
 					leaveTo="transform opacity-0 scale-95"
 				>
-					<Menu.Items className="absolute right-0 w-56 mt-2 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+					<Menu.Items
+						className="absolute right-0 w-56 mt-2 origin-top-right bg-white divide-y 
+					divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+					>
 						<div className="px-1 py-1 text-black flex flex-col">
 							{/* FIRST SECTION  */}
+
 							<Menu.Item className="dropdown-btn font-semibold">
 								<button>Messages</button>
 							</Menu.Item>
@@ -36,7 +41,6 @@ export default function Dropdown() {
 							<Menu.Item className="dropdown-btn border-b w-full border-gray ">
 								<button>Whishlists</button>
 							</Menu.Item>
-							{/* <span className="border w-full border-gray"/> */}
 
 							{/* SECOND SECTION  */}
 

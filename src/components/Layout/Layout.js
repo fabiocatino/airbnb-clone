@@ -3,14 +3,15 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import Header from './Header';
 import Searchbar from '../Searchbar';
+import Footer from './Footer';
 
-const Layout = () => {
+const Layout = ({ children }) => {
 	const router = useRouter();
 
 	return (
-		<div>
+		<div className="relative h-screen">
 			<Head>
-				<title>Create Next App</title>
+				<title>Airbnb Clone</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			{router.pathname === '/' ? (
@@ -20,7 +21,9 @@ const Layout = () => {
 						<Searchbar />
 					</div>
 					<div className="flex flex-col items-center justify-center h-full space-y-2 ">
-						<p className="text-lg text-black font-bold">Not sure where to go?</p>
+						<p className="text-lg text-black font-bold">
+							Not sure where to go?
+						</p>
 						<button className="shadow-lg hover:shadow-xl active:scale-90 h-16 w-52 rounded-full bg-white ">
 							<p
 								className="bg-clip-text text-transparent font-bold text-lg 
@@ -32,10 +35,14 @@ const Layout = () => {
 					</div>
 				</div>
 			) : (
-				<> </>
+				<div className="bg-black">
+					<Header />
+				</div>
 			)}
-
+			{children}
 			{/* FOOTER */}
+
+			<Footer />
 		</div>
 	);
 };

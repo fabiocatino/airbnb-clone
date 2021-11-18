@@ -4,7 +4,7 @@ import SmallCards from '../src/components/SmallCards';
 
 export default function Home({ exploreData, anywhereData }) {
 	return (
-		<div className='max-w-7xl mx-auto px-8'>
+		<div className="max-w-7xl mx-auto px-8">
 			{/* BANNER FROM LAYOUT.JS */}
 
 			{/* EXPLORE NEARBY */}
@@ -27,7 +27,7 @@ export default function Home({ exploreData, anywhereData }) {
 			</section>
 
 			{/* LARGE CARD */}
-			<section className=''>
+			<section className="">
 				<LargeCard
 					img="https://links.papareact.com/4cj"
 					title="The Greatest Outdoors"
