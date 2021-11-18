@@ -1,3 +1,4 @@
+import CalendarPicker from '../src/components/CalendarPicker';
 import Cards from '../src/components/Cards';
 import LargeCard from '../src/components/LargeCard';
 import SmallCards from '../src/components/SmallCards';
@@ -8,22 +9,23 @@ export default function Home({ exploreData, anywhereData }) {
 			{/* BANNER FROM LAYOUT.JS */}
 
 			{/* EXPLORE NEARBY */}
-			<section className="pt-5 flex flex-col items-center justify-center">
+			<section className="pt-5">
 				<h1 className="font-semibold text-3xl pb-10">Explore Nearby</h1>
-				<SmallCards exploreData={exploreData} />
+				<div className=" flex flex-col items-center justify-center">
+					<SmallCards exploreData={exploreData} />
+				</div>
 			</section>
-
 			{/* LIVE ANYWHERE */}
 
-			<section
-				className="py-10 mb-2 flex flex-col md:items-center justify-center overflow-y-scroll 
+			<section className="py-10 mb-2 ">
+				<h1 className="font-semibold text-3xl pb-10">Live Anywhere</h1>
+				<div
+					className="flex flex-col md:items-center justify-center overflow-y-scroll 
 							scrollbar-hide sm:scrollbar-default 
 							sm:scrollbar-thin sm:scrollbar-track-gray-300  sm:scrollbar-thumb-gray-500 select-none"
-			>
-				<h1 className="font-semibold text-3xl pb-10 flex justify-center">
-					Live Anywhere
-				</h1>
-				<Cards anywhereData={anywhereData} />
+				>
+					<Cards anywhereData={anywhereData} />
+				</div>
 			</section>
 
 			{/* LARGE CARD */}

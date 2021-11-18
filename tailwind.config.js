@@ -14,6 +14,9 @@ module.exports = {
 				'xs': '0px',
 				// => @media (min-width: 0px) { ... }
 			},
+			colors: {
+				searchBtn: '#ff385c',
+			}
 		},
 	},
 	variants: {
