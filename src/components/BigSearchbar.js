@@ -29,7 +29,7 @@ const BigSearchbar = ({open, setOpen}) => {
 				<p className="text-sm font-bold">Guests</p>
 				<p className="text-sm text-gray-400">Add guests</p>
 			</button>
-			<div className="w-[57px] flex items-center ">
+			<div className="w-[57px] flex items-center cursor-pointer ">
 				<div className="bg-searchBtn p-4 rounded-full  text-white pt-3">
 					<SearchIcon className="h-6 w-6" />
 				</div>

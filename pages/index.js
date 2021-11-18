@@ -9,11 +9,9 @@ export default function Home({ exploreData, anywhereData }) {
 			{/* BANNER FROM LAYOUT.JS */}
 
 			{/* EXPLORE NEARBY */}
-			<section className="pt-5">
+			<section className="pt-7">
 				<h1 className="font-semibold text-3xl pb-10">Explore Nearby</h1>
-				<div className=" flex flex-col items-center justify-center">
-					<SmallCards exploreData={exploreData} />
-				</div>
+				<SmallCards exploreData={exploreData} />
 			</section>
 			{/* LIVE ANYWHERE */}
 
